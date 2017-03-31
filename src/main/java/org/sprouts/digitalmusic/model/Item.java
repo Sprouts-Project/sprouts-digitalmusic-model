@@ -22,15 +22,17 @@ public class Item extends DomainEntity {
 	private String title;
 	private String description;
 	private String brand;
-	private Double price;
+	private double price;
 	private String imUrl;
 
 	// Constructors -----------------------------------------------------------
+	
 	public Item() {
 
 	}
 
 	// Getters/Setters --------------------------------------------------------
+	
 	public String getTitle() {
 		return title;
 	}
@@ -57,11 +59,11 @@ public class Item extends DomainEntity {
 	}
 
 	@Min(0)
-	public Double getPrice() {
+	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(Double price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 
@@ -75,10 +77,9 @@ public class Item extends DomainEntity {
 	}
 
 	// Relationships ----------------------------------------------------------
+	
 	private Collection<Category> categories;
 
-	// @NotNull
-	//@ElementCollection
 	@ManyToMany
 	public Collection<Category> getCategories() {
 		return categories;

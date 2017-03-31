@@ -10,34 +10,38 @@ import javax.persistence.Table;
 @Access(AccessType.PROPERTY)
 @Table
 public class OrderedItem extends DomainEntity {
+	
 	// Attributes -------------------------------------------------------------
 
-	private Double price;
-	private Integer quantity;
+	private double price;
+	private int quantity;
 
 	// Constructors -----------------------------------------------------------
+	
 	public OrderedItem() {
 
 	}
 
 	// Getters/Setters --------------------------------------------------------
-	public Double getPrice() {
+	
+	public double getPrice() {
 		return price;
 	}
 
-	public void setPrice(Double price) {
+	public void setPrice(double price) {
 		this.price = price;
 	}
 
-	public Integer getQuantity() {
+	public int getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(Integer quantity) {
+	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
 
 	// Relationships ----------------------------------------------------------
+	
 	private Order order;
 	private Item item;
 
@@ -58,5 +62,4 @@ public class OrderedItem extends DomainEntity {
 	public void setOrder(Order order) {
 		this.order = order;
 	}
-
 }

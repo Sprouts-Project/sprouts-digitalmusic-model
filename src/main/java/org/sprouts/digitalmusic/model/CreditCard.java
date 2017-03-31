@@ -7,25 +7,27 @@ import org.hibernate.validator.constraints.NotBlank;
 
 @Embeddable
 public class CreditCard {
+	
 	// Attributes -------------------------------------------------------------
 
-	private Integer cvv;
+	private int cvv;
 	private String brand;
 	private String expire;
 	private String number;
 
 	// Constructors -----------------------------------------------------------
+	
 	public CreditCard() {
 
 	}
 
 	// Getters/Setters --------------------------------------------------------
-	@NotBlank
-	public Integer getCvv() {
+	
+	public int getCvv() {
 		return cvv;
 	}
 
-	public void setCvv(Integer cvv) {
+	public void setCvv(int cvv) {
 		this.cvv = cvv;
 	}
 

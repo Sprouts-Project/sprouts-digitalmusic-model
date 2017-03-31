@@ -21,7 +21,6 @@ public class Authority extends DomainEntity implements GrantedAuthority {
 
     // Constructors -----------------------------------------------------------
 
-
     public Authority() {
         super();
     }

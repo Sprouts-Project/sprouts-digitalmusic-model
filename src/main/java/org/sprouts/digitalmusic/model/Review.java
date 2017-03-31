@@ -22,27 +22,27 @@ public class Review extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
 
-	private Integer helpful;
+	private int helpful;
 	private String reviewText;
-	private Integer unhelpful;
-
+	private int unhelpful;
 	private Date date;
-
 	private String summary;
-	private Double overall;
+	private double overall;
 
 	// Constructors -----------------------------------------------------------
+	
 	public Review() {
 
 	}
 
 	// Getters/Setters --------------------------------------------------------
+	
 	@Min(0)
-	public Integer getHelpful() {
+	public int getHelpful() {
 		return helpful;
 	}
 
-	public void setHelpful(Integer helpful) {
+	public void setHelpful(int helpful) {
 		this.helpful = helpful;
 	}
 	
@@ -56,11 +56,11 @@ public class Review extends DomainEntity {
 	}
 
 	@Min(0)
-	public Integer getUnhelpful() {
+	public int getUnhelpful() {
 		return unhelpful;
 	}
 
-	public void setUnhelpful(Integer unhelpful) {
+	public void setUnhelpful(int unhelpful) {
 		this.unhelpful = unhelpful;
 	}
 
@@ -84,15 +84,16 @@ public class Review extends DomainEntity {
 	}
 
 	@Min(0)
-	public Double getOverall() {
+	public double getOverall() {
 		return overall;
 	}
 
-	public void setOverall(Double overall) {
+	public void setOverall(double overall) {
 		this.overall = overall;
 	}
 
 	// Relationships ----------------------------------------------------------
+	
 	private Customer customer;
 	private Item item;
 
@@ -113,5 +114,4 @@ public class Review extends DomainEntity {
 	public void setItem(Item item) {
 		this.item = item;
 	}
-
 }

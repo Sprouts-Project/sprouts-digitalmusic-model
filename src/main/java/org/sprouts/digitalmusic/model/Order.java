@@ -21,20 +21,23 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Access(AccessType.PROPERTY)
 @Table(name="order_")
 public class Order extends DomainEntity {
+	
 	// Attributes -------------------------------------------------------------
 
 	private Date date;
 	private Date deliveredDate;
-	private Double totalPrice;
+	private double totalPrice;
 	private String address;
 	private CreditCard creditCard;
 
 	// Constructors -----------------------------------------------------------
+	
 	public Order() {
 
 	}
 
 	// Getters/Setters --------------------------------------------------------
+	
 	@Past
 	@Temporal(TemporalType.TIMESTAMP)
 	@DateTimeFormat(pattern = "MM/dd/yyyy HH:mm")
@@ -58,11 +61,11 @@ public class Order extends DomainEntity {
 	}
 
 	@Min(0)
-	public Double getTotalPrice() {
+	public double getTotalPrice() {
 		return totalPrice;
 	}
 
-	public void setTotalPrice(Double totalPrice) {
+	public void setTotalPrice(double totalPrice) {
 		this.totalPrice = totalPrice;
 	}
 
@@ -86,6 +89,7 @@ public class Order extends DomainEntity {
 	}
 
 	// Relationships ----------------------------------------------------------
+	
 	private Customer customer;
 
 	@ManyToOne
@@ -96,5 +100,4 @@ public class Order extends DomainEntity {
 	public void setCustomer(Customer customer) {
 		this.customer = customer;
 	}
-
 }

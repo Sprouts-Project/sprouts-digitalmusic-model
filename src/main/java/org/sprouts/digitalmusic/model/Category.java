@@ -13,8 +13,18 @@ import javax.persistence.Table;
 @Table
 public class Category extends DomainEntity {
 
+	// Attributes -------------------------------------------------------------
+	
 	private String name;
 
+	// Constructors -----------------------------------------------------------
+	
+	public Category() {
+
+	}
+	
+	// Getters/Setters --------------------------------------------------------
+	
 	public String getName() {
 		return name;
 	}
@@ -23,7 +33,8 @@ public class Category extends DomainEntity {
 		this.name = name;
 	}
 
-	// Relationships ------------
+	// Relationships ----------------------------------------------------------
+	
 	private Collection<Item> items;
 
 	@ManyToMany(mappedBy = "categories")
