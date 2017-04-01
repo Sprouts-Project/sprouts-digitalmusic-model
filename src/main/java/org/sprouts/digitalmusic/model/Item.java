@@ -6,6 +6,8 @@ import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.Min;
@@ -81,6 +83,7 @@ public class Item extends DomainEntity {
 	private Collection<Category> categories;
 
 	@ManyToMany
+	@JoinTable(name = "categories", joinColumns = @JoinColumn(name = "item"), inverseJoinColumns = @JoinColumn(name = "category"))
 	public Collection<Category> getCategories() {
 		return categories;
 	}

@@ -1,11 +1,8 @@
 package org.sprouts.digitalmusic.model;
 
-import java.util.Collection;
-
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Entity;
-import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -35,15 +32,4 @@ public class Category extends DomainEntity {
 
 	// Relationships ----------------------------------------------------------
 	
-	private Collection<Item> items;
-
-	@ManyToMany(mappedBy = "categories")
-	public Collection<Item> getItems() {
-		return items;
-	}
-
-	public void setItems(Collection<Item> items) {
-		this.items = items;
-	}
-
 }
