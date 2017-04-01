@@ -6,12 +6,6 @@
     <artifactId>sprouts-digitalmusic-model</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <parent>
-        <groupId>org.sprouts.digitalmusic</groupId>
-        <artifactId>sprouts-digitalmusic</artifactId>
-        <version>0.1</version>
-    </parent>
-    
     <repositories>
 		<repository>
 			<id>nexus</id>
@@ -37,6 +31,12 @@
 			<url>http://nexus.sprouts-project.com:8081/repository/maven-snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
+
+	<parent>
+		<groupId>org.sprouts.digitalmusic</groupId>
+		<artifactId>sprouts-digitalmusic</artifactId>
+		<version>0.1</version>
+	</parent>
 
     <dependencies>
         <dependency>
