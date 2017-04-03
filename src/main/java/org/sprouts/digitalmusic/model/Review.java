@@ -6,6 +6,7 @@ import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -17,7 +18,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Access(AccessType.PROPERTY)
-@Table
+@Table(name="review")
 public class Review extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
@@ -98,6 +99,7 @@ public class Review extends DomainEntity {
 	private Item item;
 
 	@ManyToOne
+	@JoinColumn(name="customer_id")
 	public Customer getCustomer() {
 		return customer;
 	}
@@ -107,6 +109,7 @@ public class Review extends DomainEntity {
 	}
 
 	@ManyToOne
+	@JoinColumn(name="item_id")
 	public Item getItem() {
 		return item;
 	}

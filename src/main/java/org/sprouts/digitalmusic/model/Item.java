@@ -16,7 +16,7 @@ import org.hibernate.validator.constraints.URL;
 
 @Entity
 @Access(AccessType.PROPERTY)
-@Table
+@Table(name="item")
 public class Item extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
@@ -83,7 +83,7 @@ public class Item extends DomainEntity {
 	private Collection<Category> categories;
 
 	@ManyToMany
-	@JoinTable(name = "categories", joinColumns = @JoinColumn(name = "item"), inverseJoinColumns = @JoinColumn(name = "category"))
+	@JoinTable(name = "categories", joinColumns = @JoinColumn(name = "items_id"), inverseJoinColumns = @JoinColumn(name = "categories_id"))
 	public Collection<Category> getCategories() {
 		return categories;
 	}

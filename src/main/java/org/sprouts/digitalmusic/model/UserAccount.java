@@ -10,7 +10,7 @@ import java.util.Set;
 
 @Entity
 @Access(AccessType.PROPERTY)
-@Table
+@Table(name="useraccount")
 public class UserAccount extends DomainEntity implements UserDetails {
 
 	// Attributes -------------------------------------------------------------

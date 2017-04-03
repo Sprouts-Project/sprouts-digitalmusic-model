@@ -20,7 +20,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 @Access(AccessType.PROPERTY)
-@Table
+@Table(name="customer")
 public class Customer extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------

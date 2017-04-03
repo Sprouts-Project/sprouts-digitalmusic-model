@@ -3,12 +3,13 @@ package org.sprouts.digitalmusic.model;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
 @Access(AccessType.PROPERTY)
-@Table
+@Table(name="ordereditem")
 public class OrderedItem extends DomainEntity {
 	
 	// Attributes -------------------------------------------------------------
@@ -46,6 +47,7 @@ public class OrderedItem extends DomainEntity {
 	private Item item;
 
 	@ManyToOne
+	@JoinColumn(name="item_id")
 	public Item getItem() {
 		return item;
 	}
@@ -55,6 +57,7 @@ public class OrderedItem extends DomainEntity {
 	}
 	
 	@ManyToOne
+	@JoinColumn(name="order_id")
 	public Order getOrder() {
 		return order;
 	}

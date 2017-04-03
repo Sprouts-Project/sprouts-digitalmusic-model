@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -93,6 +94,7 @@ public class Order extends DomainEntity {
 	private Customer customer;
 
 	@ManyToOne
+	@JoinColumn(name="customer_id")
 	public Customer getCustomer() {
 		return customer;
 	}

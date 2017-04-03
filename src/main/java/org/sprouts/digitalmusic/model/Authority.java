@@ -11,7 +11,7 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Access(AccessType.PROPERTY)
-@Table
+@Table(name="authority")
 public class Authority extends DomainEntity implements GrantedAuthority {
 
     // Attributes -------------------------------------------------------------

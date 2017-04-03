@@ -6,6 +6,8 @@ import javax.persistence.Access;
 import javax.persistence.AccessType;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -14,7 +16,7 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @Access(AccessType.PROPERTY)
-@Table
+@Table(name="shoppingcart")
 public class ShoppingCart extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
@@ -35,6 +37,7 @@ public class ShoppingCart extends DomainEntity {
 	@NotNull
 	@Valid
 	@OneToOne(cascade=CascadeType.ALL)
+	@JoinColumn(name="customer_id")
 	public Customer getCustomer() {
 		return customer;
 	}
@@ -46,6 +49,7 @@ public class ShoppingCart extends DomainEntity {
 	@NotNull
 	@Valid
 	@ManyToMany
+	@JoinTable(name = "shoppingcart_item", joinColumns = @JoinColumn(name = "ShoppingCart_id"), inverseJoinColumns = @JoinColumn(name = "items_id"))
 	public Collection<Item> getItems() {
 		return items;
 	}

@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Access(AccessType.PROPERTY)
-@Table
+@Table(name="category")
 public class Category extends DomainEntity {
 
 	// Attributes -------------------------------------------------------------
