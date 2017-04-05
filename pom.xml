@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.sprouts.digitalmusic.model</groupId>
     <artifactId>sprouts-digitalmusic-model</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1</version>
 
     <repositories>
 		<repository>
 			<id>nexus</id>
-			<url>http://nexus.sprouts-project.com:8081</url>
+			<url>http://nexus.sprouts-project.com:8081/repository/maven-releases</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
