@@ -1,7 +1,6 @@
-package org.sprouts.digitalmusic.model.parser;
+package org.sprouts.digitalmusic.model.parser.customer;
 
 import java.util.List;
-import java.util.Map;
 
 public class CustomerOverview {
 
@@ -10,8 +9,8 @@ public class CustomerOverview {
 	private double average_age_male;
 	private double average_age_female;
 	
-	private List<Map<String, String>> average_age_by_state;
-	private List<Map<String, String>> customers_by_state;
+	private List<CustomerAverageAgeByState> average_age_by_state;
+	private List<CustomerByState> customers_by_state;
 	
 	//Constructor
 	public CustomerOverview(){
@@ -52,19 +51,19 @@ public class CustomerOverview {
 		this.average_age_female = average_age_female;
 	}
 
-	public  List<Map<String, String>> getAverage_age_by_state() {
+	public  List<CustomerAverageAgeByState> getAverage_age_by_state() {
 		return average_age_by_state;
 	}
 
-	public void setAverage_age_by_state( List<Map<String, String>> average_age_by_state) {
+	public void setAverage_age_by_state( List<CustomerAverageAgeByState> average_age_by_state) {
 		this.average_age_by_state = average_age_by_state;
 	}
 
-	public List<Map<String, String>> getCustomers_by_state() {
+	public List<CustomerByState> getCustomers_by_state() {
 		return customers_by_state;
 	}
 
-	public void setCustomers_by_state(List<Map<String, String>> customers_by_state) {
+	public void setCustomers_by_state(List<CustomerByState> customers_by_state) {
 		this.customers_by_state = customers_by_state;
 	}
 }
