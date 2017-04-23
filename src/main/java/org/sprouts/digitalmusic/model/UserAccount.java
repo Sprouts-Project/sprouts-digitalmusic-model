@@ -40,7 +40,6 @@ public class UserAccount extends DomainEntity implements UserDetails {
 	}
 
 	@Size(min = 0, max = 500)
-	@JsonIgnore
 	public String getPassword() {
 		return password;
 	}
