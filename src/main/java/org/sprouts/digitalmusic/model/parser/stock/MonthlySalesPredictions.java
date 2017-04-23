@@ -1,10 +1,10 @@
-package org.sprouts.digitalmusic.model.parser.finance;
+package org.sprouts.digitalmusic.model.parser.stock;
 
 public class MonthlySalesPredictions {
 	//Attributes
 	private int month;
 	private int year;
-	private double salesValue;
+	private int sales;
 	
 	// Constructor
 	public MonthlySalesPredictions(){
@@ -28,12 +28,12 @@ public class MonthlySalesPredictions {
 		this.year = year;
 	}
 
-	public double getSalesValue() {
-		return salesValue;
+	public int getSales() {
+		return sales;
 	}
 
-	public void setSalesValue(double salesValue) {
-		this.salesValue = salesValue;
+	public void setSales(int sales) {
+		this.sales = sales;
 	}
 		
 }
