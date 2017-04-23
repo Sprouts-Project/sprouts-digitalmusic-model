@@ -5,7 +5,7 @@ import java.util.List;
 public class FinanceOverview {
 
 	private List<FinanceMonthlySale> monthly_sales;
-	private List<FinanceMonthlySalesByState> monthly_sales_by_state;
+	private List<MonthlySalesByState> monthly_sales_by_state;
 	
 	//Constructor
 	public FinanceOverview(){
@@ -21,11 +21,11 @@ public class FinanceOverview {
 		this.monthly_sales = monthly_sales;
 	}
 
-	public List<FinanceMonthlySalesByState> getMonthly_sales_by_state() {
+	public List<MonthlySalesByState> getMonthly_sales_by_state() {
 		return monthly_sales_by_state;
 	}
 
-	public void setMonthly_sales_by_state(List<FinanceMonthlySalesByState> monthly_sales_by_state) {
+	public void setMonthly_sales_by_state(List<MonthlySalesByState> monthly_sales_by_state) {
 		this.monthly_sales_by_state = monthly_sales_by_state;
 	}
 
