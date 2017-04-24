@@ -5,7 +5,7 @@ import java.util.List;
 public class StockOverview {
 
 	private List<StockMonthlySale> monthly_sales;
-	private List<SotckMonthlySalesByState> monthly_sales_by_state;
+	private List<SotckListMonthlySalesByState> monthly_sales_by_state;
 	private List<StockTopProduct> top_products;
 	
 	//Constructor
@@ -22,11 +22,11 @@ public class StockOverview {
 		this.monthly_sales = monthly_sales;
 	}
 
-	public List<SotckMonthlySalesByState> getMonthly_sales_by_state() {
+	public List<SotckListMonthlySalesByState> getMonthly_sales_by_state() {
 		return monthly_sales_by_state;
 	}
 
-	public void setMonthly_sales_by_state(List<SotckMonthlySalesByState> monthly_sales_by_state) {
+	public void setMonthly_sales_by_state(List<SotckListMonthlySalesByState> monthly_sales_by_state) {
 		this.monthly_sales_by_state = monthly_sales_by_state;
 	}
 

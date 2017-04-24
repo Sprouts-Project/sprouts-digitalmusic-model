@@ -1,27 +1,18 @@
-package org.sprouts.digitalmusic.model.parser.stock;
+package org.sprouts.digitalmusic.model.parser.finance;
 
-public class SotckMonthlySalesByState {
+public class StatesSales {
 
 	//Attributes
-	private int sales;
+	private double sales;
 	private String state;
 	private String abbreviation;
 	
 	//Constructor
-	public SotckMonthlySalesByState(){
+	public StatesSales(){
 		
 	}
 	
 	//Getters and setters
-	
-	public int getSales() {
-		return sales;
-	}
-
-	public void setSales(int sales) {
-		this.sales = sales;
-	}
-
 	public String getState() {
 		return state;
 	}
@@ -37,4 +28,14 @@ public class SotckMonthlySalesByState {
 	public void setAbbreviation(String abbreviation) {
 		this.abbreviation = abbreviation;
 	}
+
+	public double getSales() {
+		return sales;
+	}
+
+	public void setSales(double sales) {
+		this.sales = sales;
+	}
+	
+	
 }

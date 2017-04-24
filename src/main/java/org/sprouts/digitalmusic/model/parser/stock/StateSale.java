@@ -1,6 +1,6 @@
 package org.sprouts.digitalmusic.model.parser.stock;
 
-public class SotckMonthlySalesByState {
+public class StateSale {
 
 	//Attributes
 	private int sales;
@@ -8,7 +8,7 @@ public class SotckMonthlySalesByState {
 	private String abbreviation;
 	
 	//Constructor
-	public SotckMonthlySalesByState(){
+	public StateSale(){
 		
 	}
 	
