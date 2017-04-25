@@ -1,35 +1,35 @@
 package org.sprouts.digitalmusic.model.parser.recommender;
 
 public class CollaborativeFilteringJobServerResponse {
-	private int userId;
-	private int itemId;
+	private int user;
+	private int product;
 	private double rating;
 
 	public CollaborativeFilteringJobServerResponse() {
 
 	}
 
-	public CollaborativeFilteringJobServerResponse(int userId, int itemId, double rating) {
+	public CollaborativeFilteringJobServerResponse(int user, int product, double rating) {
 		super();
-		this.userId = userId;
-		this.itemId = itemId;
+		this.user = user;
+		this.product = product;
 		this.rating = rating;
 	}
 
-	public int getUserId() {
-		return userId;
+	public int getUser() {
+		return user;
 	}
 
-	public void setUserId(int userId) {
-		this.userId = userId;
+	public void setUser(int user) {
+		this.user = user;
 	}
 
-	public int getItemId() {
-		return itemId;
+	public int getProduct() {
+		return product;
 	}
 
-	public void setItemId(int itemId) {
-		this.itemId = itemId;
+	public void setProduct(int product) {
+		this.product = product;
 	}
 
 	public double getRating() {
