@@ -5,7 +5,7 @@ import java.util.List;
 public class ItemProfileRecommender {
 	private int item_id;
 	private List<String> categories;
-	private List<ItemProfileRecommendation> items;
+	private List<ItemRecommendation> items;
 
 	public ItemProfileRecommender() {
 		super();
@@ -27,11 +27,11 @@ public class ItemProfileRecommender {
 		this.categories = categories;
 	}
 
-	public List<ItemProfileRecommendation> getItems() {
+	public List<ItemRecommendation> getItems() {
 		return items;
 	}
 
-	public void setItems(List<ItemProfileRecommendation> items) {
+	public void setItems(List<ItemRecommendation> items) {
 		this.items = items;
 	}
 

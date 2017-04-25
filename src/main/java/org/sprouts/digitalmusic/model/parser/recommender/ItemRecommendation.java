@@ -1,13 +1,13 @@
 package org.sprouts.digitalmusic.model.parser.recommender;
 
-public class ItemProfileRecommendation {
+public class ItemRecommendation {
 	private String title;
 	private String imUrl;
 	private String brand;
 	private int id;
 	private Double price;
 
-	public ItemProfileRecommendation() {
+	public ItemRecommendation() {
 		super();
 	}
 
