@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.sprouts.digitalmusic.model</groupId>
     <artifactId>sprouts-digitalmusic-model</artifactId>
-    <version>0.3</version>
+    <version>1.0</version>
 
     <repositories>
 		<repository>
@@ -35,7 +35,7 @@
 	<parent>
 		<groupId>org.sprouts.digitalmusic</groupId>
 		<artifactId>sprouts-digitalmusic</artifactId>
-		<version>0.2</version>
+		<version>1.0</version>
 	</parent>
 
     <dependencies>
