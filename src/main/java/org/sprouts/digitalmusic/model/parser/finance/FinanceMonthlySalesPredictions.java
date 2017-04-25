@@ -5,7 +5,7 @@ public class FinanceMonthlySalesPredictions {
 	//Attributes
 	private int month;
 	private int year;
-	private double value;
+	private double salesValue;
 	
 	// Constructor
 	public FinanceMonthlySalesPredictions(){
@@ -29,12 +29,12 @@ public class FinanceMonthlySalesPredictions {
 		this.year = year;
 	}
 
-	public double getValue() {
-		return value;
+	public double getSalesValue() {
+		return salesValue;
 	}
 
-	public void setValue(double value) {
-		this.value = value;
+	public void setSalesValue(double salesValue) {
+		this.salesValue = salesValue;
 	}
 		
 }
