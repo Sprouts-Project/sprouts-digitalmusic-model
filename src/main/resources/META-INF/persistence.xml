@@ -14,13 +14,13 @@
              xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 
-    <persistence-unit name="digital-music">
+    <persistence-unit name="digital-music-develop">
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://139.59.175.35:3306/digital-music"/>
-            <property name="javax.persistence.jdbc.user" value="sprouts"/>
-            <property name="javax.persistence.jdbc.password" value="Spr0ut$-my$ql-p@$$-8"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://139.59.175.35:3306/digital-music-develop"/>
+            <property name="javax.persistence.jdbc.user" value="manager"/>
+            <property name="javax.persistence.jdbc.password" value="root"/>
 
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
 
