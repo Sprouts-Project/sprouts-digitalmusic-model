@@ -83,7 +83,7 @@ public class Item extends DomainEntity {
 	private Collection<Category> categories;
 
 	@ManyToMany
-	@JoinTable(name = "categories", joinColumns = @JoinColumn(name = "items_id"), inverseJoinColumns = @JoinColumn(name = "categories_id"))
+	@JoinTable(name = "item_category", joinColumns = @JoinColumn(name = "items_id"), inverseJoinColumns = @JoinColumn(name = "categories_id"))
 	public Collection<Category> getCategories() {
 		return categories;
 	}
