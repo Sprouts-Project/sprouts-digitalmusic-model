@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.Min;
 
 @Entity
 @Access(AccessType.PROPERTY)
@@ -32,7 +33,8 @@ public class OrderedItem extends DomainEntity {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-
+	
+	@Min(0)
 	public int getQuantity() {
 		return quantity;
 	}
