@@ -14,6 +14,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Past;
 
+import org.hibernate.validator.constraints.Range;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
@@ -84,7 +85,7 @@ public class Review extends DomainEntity {
 		this.summary = summary;
 	}
 
-	@Min(0)
+	@Range(min=0, max=5)
 	public double getOverall() {
 		return overall;
 	}
